@@ -1,0 +1,30 @@
+<html>
+<script>
+  var numero = 13
+  function verificaNumeroPrimo(numero) {
+    var primo = true;
+    for (var i = 2; i < numero; i++) {
+      if ((numero % i) === 0) primo = false;
+    }
+    // return  primo ? "O número é primo" : "O número não é primo";
+
+    /*if(primo){
+         console.log("O número é primo")
+     }else{
+         console.log("O número não é primo")
+     }*/
+
+    return primo
+  }
+  function validacao(numero) {
+    var soma = 0;
+    for (var i = 5; i < numero; i++) {
+      if (verificaNumeroPrimo(i)) {
+        soma = soma + i
+      }
+    }
+    return soma
+  }
+</script>
+
+</html>
